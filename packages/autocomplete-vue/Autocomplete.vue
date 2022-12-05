@@ -209,11 +209,13 @@ export default {
 
     handleShow() {
       this.expanded = true
+      this.$emit("show")
     },
 
     handleHide() {
       this.expanded = false
       this.resetPosition = true
+      this.$emit("hide")
     },
 
     handleLoading() {
